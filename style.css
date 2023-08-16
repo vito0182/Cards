@@ -17,8 +17,8 @@ canvas {
 }
 
 .card__wrapper {
-    width: 200px;
-    height: 250px;
+    width: 300px;
+    height: 50%;
     perspective: 1000px;
     margin: 10px;
 }
