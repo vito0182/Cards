@@ -1,5 +1,5 @@
 var cont = 0;
-var text = String("Olá Ana!|Já sabe né|uma vez que hoje|é um dia imporante|tô passando pra falar sobre|...|o niver de uma coisinha muitooo especial|...|é niver da capital do Piaui!|:)|Bem, brincadeiras à parte. Hoje é...|Hoje é dia do Filosofo!!! né?!|Haha|Tem algo mais incrivel que isso?|:))|Bemm, fora essas coisas importantes|Feliz aniversario ana!!!| Vc é foda <3|...|...|que foi?|acha que tem mais coisa aqui?|...|...|hmm, não?|pode fechar o site|...|...|...|aff|...|...|sério, não tem nada aqui|...|...|vai embora|...|ok, desisto|...|não vai mesmo né?|...|tá...|uma coisinha pra você:|🎉🥳🎁🕺🥳🎉🎉✨🎉🥳🎉🎉🥳🎇🥳✨🎉🕺🥳🎁🎇✨🎁🎁🕺🎉🥳🥳🎉🥳🥳🥳|🎉🎉🎁🎉✨🎉🎇🥳🎁🕺🥳🎉🕺🥳🎁🥳🎁🎉🎉🕺🕺🎁🥳🎁🥳🥳🎁🎉🕺🥳🥳✨");
+var text = String("|");
 var textAr = text.split("|");
 
 var card2 = document.getElementById("card2");
@@ -98,10 +98,10 @@ function Firework( sx, sy, tx, ty ) {
 	}
 	this.angle = Math.atan2( ty - sy, tx - sx );
 	this.speed = 0.5;
-	this.acceleration = 1.05;
-	this.brightness = random( 50, 100 );
+	this.acceleration = 1.03;
+	this.brightness = random( 50, 150 );
 	// circle target indicator radius
-	this.targetRadius = 2;
+	this.targetRadius = 3;
 }
 
 // update firework
@@ -206,6 +206,8 @@ Particle.prototype.draw = function() {
 	ctx.moveTo( this.coordinates[ this.coordinates.length - 1 ][ 0 ], this.coordinates[ this.coordinates.length - 1 ][ 1 ] );
 	ctx.lineTo( this.x, this.y );
 	ctx.strokeStyle = 'hsla(' + this.hue + ', 100%, ' + this.brightness + '%, ' + this.alpha + ')';
+	ctx.lineWidth = 2;
+    ctx.lineCap = 'round';
 	ctx.stroke();
 }
 
