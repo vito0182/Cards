@@ -1,5 +1,5 @@
 var cont = 0;
-var text = String("|");
+var text = String("Hey Mariam!|Well...|You know|today is a special day|isn't it?|...|...|Today is...|:)|Today is the mitten tree day!!! Right?!|Haha|Is there something cooler than that?|:))|Wellll, aside that|Happyyy birthdayyy!!!|You're hella awesome Mariam <3|...|Love U :))|...|Hmm? Sup?|That's it|There's nothing more here|...|...|Hmm, what are you waiting for? Hum|I can't hug you|...|I live on the other side of the globe|That's the best I can do :((|...|...|...|I'm dead serious, there's nothing hereee|...|...|Go awayyy|...|Okay, I give up|...|You won't go right?|...|You want fireworks or something?|Alrigh, but just because you're really cute:|🎉🥳🎁🕺🥳🎉🎉✨🎉🥳🎉🎉🥳🎇🥳✨🎉🕺🥳🎁🎇✨🎁🎁🕺🎉🥳🥳🎉🥳🥳🥳|🎉🎉🎁🎉✨🎉🎇🥳🎁🕺🥳🎉🕺🥳🎁🥳🎁🎉🎉🕺🕺🎁🥳🎁🥳🥳🎁🎉🕺🥳🥳✨");
 var textAr = text.split("|");
 
 var card2 = document.getElementById("card2");
